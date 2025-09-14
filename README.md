@@ -7,5 +7,5 @@ Desenvolvimento de um Sistema Web Fitness com Gamificação: Dicas de Treino, Ra
 * Java 17/21
 * Spring Boot
 * JTE (Java Template Engine)
-* HTML/CSS
+* React + Vite + CSS
 * Banco de dados H2/PostgreSQL

@@ -12,7 +12,7 @@ function ForgotPassword() {
   return (
     <div className="min-h-screen bg-slate-900 flex items-center justify-center font-montserrat px-4">
       <div className="p-8 rounded-xl shadow-2xl w-full max-w-md">
-        <h2 className="text-2xl text-vermelhoFit font-bold text-center mb-6">
+        <h2 className="text-3xl text-vermelhoFit font-bold text-center mb-6">
           Esqueceu sua senha?
         </h2>
 
