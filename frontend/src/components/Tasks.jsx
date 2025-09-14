@@ -1,10 +1,10 @@
 function Tasks({ tasks, onToggle, onDelete }) {
   return (
-    <div className="space-y-4 mt-4">
+    <div className="space-y-4 mt-4 font-montserrat">
       {tasks.map((task) => (
         <div
           key={task.id}
-          className="bg-white p-4 rounded-lg shadow flex justify-between items-center hover:bg-gray-100 transition"
+          className="bg-white p-4 rounded-xl shadow-md flex justify-between items-center hover:bg-gray-100 transition"
         >
           <div>
             <h2
@@ -19,13 +19,13 @@ function Tasks({ tasks, onToggle, onDelete }) {
           <div className="flex gap-2">
             <button
               onClick={() => onToggle(task.id)}
-              className="px-3 py-1 text-sm bg-blue-600 text-white rounded hover:bg-blue-700"
+              className="px-3 py-1 text-sm bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
             >
               {task.IsCompleted ? 'Desfazer' : 'Concluir'}
             </button>
             <button
               onClick={() => onDelete(task.id)}
-              className="px-3 py-1 text-sm bg-red-600 text-white rounded hover:bg-red-700"
+              className="px-3 py-1 text-sm bg-vermelhoFit text-white rounded-lg hover:brightness-90 transition"
             >
               Deletar
             </button>
