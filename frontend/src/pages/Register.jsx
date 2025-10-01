@@ -63,9 +63,9 @@ function Register() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center font-montserrat px-4">
+    <div className="min-h-screen flex items-center justify-center font-montserrat px-4">
       <div className=" p-6 rounded-xl shadow-2xl w-full max-w-md">
-        <h2 className="text-3xl text-white font-bold text-center mb-4">
+        <h2 className="text-4xl text-white font-bold text-center mb-4">
           Cadastro
         </h2>
 

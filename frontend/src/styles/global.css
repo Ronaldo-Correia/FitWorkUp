@@ -23,3 +23,13 @@ h1, h2, h3 {
 .accent{
     accent-color: #FF3B3F;
 }
+.text2{
+  font-size: 100%;
+  font-weight: bold;
+  background-color: #B0B0B0;
+  width:16%;
+  
+}
+.text-vermelhoFit {
+  color: #E50914;
+}
