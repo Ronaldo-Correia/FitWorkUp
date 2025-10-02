@@ -1,0 +1,76 @@
+.tasks-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(to bottom right, #000, #1f1f1f, #333);
+  padding: 40px 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tasks-card {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 600px;
+}
+
+.tasks-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #E50914;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Lista */
+.tasks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tasks-empty {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 16px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F5F5F5;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: background 0.3s ease;
+}
+
+.task-item span {
+  cursor: pointer;
+  flex: 1;
+  font-size: 1rem;
+}
+
+.task-item.done span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-remove {
+  background: transparent;
+  border: none;
+  color: #E50914;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 12px;
+  transition: transform 0.2s ease;
+}
+
+.task-remove:hover {
+  transform: scale(1.2);
+}

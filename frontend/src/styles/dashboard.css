@@ -1,0 +1,93 @@
+.dashboard-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(to bottom right, #000, #1f1f1f, #333);
+  padding: 40px 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 800px;
+}
+
+.dashboard-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #E50914;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Estatísticas */
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #F5F5F5;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #E50914;
+}
+.stat-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Atalhos */
+.dashboard-subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.dashboard-shortcuts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.shortcut-card {
+  background: #E50914;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.shortcut-card:hover {
+  background: #c40812;
+  transform: translateY(-4px);
+}
+.shortcut-icon {
+  font-size: 1.8rem;
+}
+.shortcut-label {
+  font-size: 1rem;
+}

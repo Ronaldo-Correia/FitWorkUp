@@ -1,0 +1,77 @@
+.forgot-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #000, #1f1f1f, #333);
+  padding: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.forgot-card {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.forgot-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #E50914;
+  margin-bottom: 24px;
+}
+
+.forgot-message {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #F5F5F5;
+  font-size: 1rem;
+  outline: none;
+}
+.input-field:focus {
+  border-color: #E50914;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.3);
+}
+
+.btn-forgot {
+  width: 100%;
+  background-color: #E50914;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-forgot:hover {
+  filter: brightness(90%);
+}
+
+.forgot-footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.forgot-link {
+  color: #E50914;
+  font-weight: 600;
+  text-decoration: none;
+}
+.forgot-link:hover {
+  text-decoration: underline;
+}

@@ -1,47 +1,48 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import "@styles/forgot.css";
 
 function ForgotPassword() {
   const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleResetPassword = () => {
-    // Aqui você adiciona a lógica de envio de email para redefinir a senha
-    alert("Link de redefinição de senha enviado para: " + email);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!email) {
+      setMessage("Por favor, insira seu email.");
+      return;
+    }
+    // Aqui entraria a lógica de envio de recuperação
+    setMessage("Se o email existir, enviaremos instruções de recuperação.");
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center font-montserrat px-4">
-      <div className="p-8 rounded-xl shadow-2xl w-full max-w-md">
-        <h2 className="text-3xl text-vermelhoFit font-bold text-center mb-6">
-          Esqueceu sua senha?
-        </h2>
+    <div className="forgot-page">
+      <div className="forgot-card">
+        <h2 className="forgot-title">Esqueci minha senha</h2>
 
-        <p className="text-gray-400 text-sm mb-6 text-center">
-          Digite seu email para redefinir sua senha
-        </p>
+        {message && <p className="forgot-message">{message}</p>}
 
-        <div className="mb-6">
+        <form onSubmit={handleSubmit}>
           <input
             type="email"
-            placeholder="📧 example@gmail.com"
+            placeholder="Digite seu email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="user w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-vermelhoFit"
+            className="input-field"
           />
-        </div>
 
-        <button
-          onClick={handleResetPassword}
-          className="btn w-full text-white py-3 rounded-lg font-semibold hover:brightness-90 transition duration-200"
-        >
-          Redefinir senha
-        </button>
+          <button type="submit" className="btn-forgot">
+            Enviar instruções
+          </button>
+        </form>
 
-        <div className="mt-6 text-sm text-center">
-          <Link to="/login" className="text  hover:underline">
-            ← Voltar para o login
+        <p className="forgot-footer">
+          Lembrou sua senha?{" "}
+          <Link to="/login" className="forgot-link">
+            Voltar ao login
           </Link>
-        </div>
+        </p>
       </div>
     </div>
   );
