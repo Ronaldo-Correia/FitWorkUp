@@ -1,0 +1,55 @@
+/* src/styles/forms.css */
+
+/* Inputs */
+.input-group {
+
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-icon {
+  margin-right: 8px;
+  color: #666;
+}
+
+.input-field {
+  outline: none;
+  flex: 1;
+  background: transparent;
+  font-size: 1rem;
+}
+
+/* Botões */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background: #e50914;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #c40812;
+}
+
+.btn.social.google {
+  background: #4285f4;
+  color: white;
+}
+
+.btn.social.facebook {
+  background: #1877f2;
+  color: white;
+}

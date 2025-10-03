@@ -32,7 +32,8 @@
 }
 
 .input-field {
-  width: 100%;
+  
+  width: 90%;
   padding: 12px;
   margin-bottom: 16px;
   border-radius: 8px;
@@ -40,6 +41,7 @@
   background: #F5F5F5;
   font-size: 1rem;
   outline: none;
+  
 }
 .input-field:focus {
   border-color: #E50914;
@@ -50,14 +52,16 @@
   width: 100%;
   background-color: #E50914;
   color: white;
-  border: none;
   padding: 12px;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
+  border: none;
   transition: all 0.3s ease;
 }
 .btn-forgot:hover {
+    transform: scale(1.05);
+
   filter: brightness(90%);
 }
 

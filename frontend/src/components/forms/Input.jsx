@@ -1,3 +1,5 @@
+import "../../styles/forms.css";
+
 function Input({ icon: Icon, ...props }) {
   return (
     <div className="input-group">

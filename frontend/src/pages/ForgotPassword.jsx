@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "@styles/forgot.css";
+import "../styles/forgot.css"; // importa o CSS da tela
 
 function ForgotPassword() {
   const [email, setEmail] = useState("");
@@ -24,13 +24,15 @@ function ForgotPassword() {
         {message && <p className="forgot-message">{message}</p>}
 
         <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            placeholder="Digite seu email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="input-field"
-          />
+          <div className="forgot-input-group">
+            <input
+              type="email"
+              className="input-field"
+              placeholder="Digite seu email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
 
           <button type="submit" className="btn-forgot">
             Enviar instruções

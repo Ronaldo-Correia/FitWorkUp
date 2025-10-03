@@ -84,7 +84,6 @@ h1, h2, h3 {
 
 .input-field {
   flex: 1;
-  border: none;
   padding: 12px;
   font-size: 1rem;
   outline: none;

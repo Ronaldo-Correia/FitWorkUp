@@ -45,7 +45,11 @@
   margin-bottom: 16px;
   padding: 0 12px;
 }
-
+.login-input-group:focus {
+  border-color: #E50914;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.3);
+  outline: none;
+}
 .login-input-group input {
   flex: 1;
   border: none;
@@ -80,10 +84,10 @@
 
 /* Botão principal */
 .btn-login {
+  border: none;
   width: 100%;
   background-color: #E50914;
   color: white;
-  border: 1px solid black;
   padding: 12px;
   border-radius: 8px;
   font-weight: 600;
@@ -92,18 +96,20 @@
 }
 
 .btn-login:hover {
+  transform: scale(1.05);
   filter: brightness(80%);
 }
 
 /* Botões sociais */
 .btn-social {
+  
   width: 100%;
   margin-top: 12px;
   padding: 12px;
+    border: none;
   border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,20 +118,23 @@
 }
 
 .btn-social.google {
-  background: white;
+  background: gray;
   color: black;
 }
 
 .btn-social.google:hover {
+  transform: scale(1.05);
   background: #c7b9b9ff;
 }
 
 .btn-social.facebook {
+  
   background: #1877f2;
   color: white;
 }
 
 .btn-social.facebook:hover {
+  transform: scale(1.05);
   background: #175bb4ff;
 }
 
