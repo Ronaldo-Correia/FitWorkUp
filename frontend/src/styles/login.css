@@ -1,0 +1,150 @@
+/* Container principal */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #000, #1f1f1f, #333);
+  padding: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Card */
+.login-card {
+  background: white;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Título */
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #E50914;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Erro */
+.login-error {
+  color: #E50914;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Inputs */
+.login-input-group {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 0 12px;
+}
+.login-input-group input:focus {
+  border-color: #E50914;
+  box-shadow: 0 0 0 2px rgba(229, 9, 20, 0.3);
+  outline: none;
+}
+.login-input-group input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  outline: none;
+  background: #f5f5f5;
+  transition: all 0.2s ease;
+}
+
+
+.login-icon {
+  color: #666;
+  margin-right: 8px;
+}
+
+/* Opções extras */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.login-link {
+  color: #E50914;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Botão principal */
+.btn-login {
+  border: none;
+  width: 100%;
+  background-color: #E50914;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  transform: scale(1.05);
+  filter: brightness(80%);
+}
+
+/* Botões sociais */
+.btn-social {
+  
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+    border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn-social.google {
+  background: orange;
+  color: white;
+}
+
+.btn-social.google:hover {
+  transform: scale(1.05);
+  background: #ec7c40ff;
+}
+
+.btn-social.facebook {
+  
+  background: #1877f2;
+  color: white;
+}
+
+.btn-social.facebook:hover {
+  transform: scale(1.05);
+  background: #175bb4ff;
+}
+
+/* Cadastro */
+.login-register {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+}

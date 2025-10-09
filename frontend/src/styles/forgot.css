@@ -1,0 +1,97 @@
+.forgot-page-dark { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #111;
+  color: #fff;
+  padding: 16px;
+}
+
+.forgot-card-dark {
+  background-color: #fff;
+  color: #000;
+  border-radius: 12px;
+}
+
+.forgot-title-dark {
+  color: #d40000;
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.forgot-divider {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 25px;
+}
+
+.forgot-card-dark label {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.forgot-card-dark input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  margin: 17px;
+  font-size: 15px;
+}
+.forgot-card-dark input:focus {
+  border-color: #d40000;
+  box-shadow: 0 0 5px rgba(212, 0, 0, 0.5);
+  outline: none;
+}
+
+.forgot-card-dark button {
+  margin: 13px;
+  width: 90%;
+  background-color: #d40000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.forgot-card-dark button:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.05);
+  filter: brightness(80%);
+}
+
+.forgot-card-dark p {
+  margin-top: 15px;
+  text-align: center;
+  color: #444;
+}
+
+.forgot-card-dark a {
+  color: #d40000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.forgot-card-dark a:hover {
+  text-decoration: underline;
+}
+
+.image-section2-dark {
+  display: flex;
+  gap: 30px;
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+    border-radius: 12px;
+
+}
